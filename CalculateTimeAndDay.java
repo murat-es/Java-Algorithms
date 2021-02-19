@@ -8,10 +8,10 @@ public class CalculateTimeAndDay {
         int islem=input.nextInt();
         if (islem==2) {
             System.out.print("Bugün haftanın kaçıncı günü? ");
-            int bugun = input.nextInt();
-            while (1 > bugun || bugun > 7) {
+            int today = input.nextInt();
+            while (1 > today || today > 7) {
                 System.err.print("Lütfen 1'den 7'ye kadar bir değer giriniz.(örn:pazartesi için 1) ");
-                bugun = input.nextInt();
+                today = input.nextInt();
             }
             System.out.print("Kaç gün sonraki günü merak ediyorsun? ");
             int x = input.nextInt();
@@ -19,9 +19,9 @@ public class CalculateTimeAndDay {
             String[] gunler = {"Pazar", "Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi"};
 
             int a = x % 7;
-            bugun = (bugun + a) % 7;
+            today = (today + a) % 7;
 
-            System.out.println(x + " gün sonra günlerden " + gunler[bugun]);
+            System.out.println(x + " gün sonra günlerden " + gunler[today]);
         }
         else if (islem==1){
             System.out.println("Şu anda saat kaç?");
