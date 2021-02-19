@@ -24,10 +24,10 @@ public class CalculateTimeAndDay {
             System.out.println(x + " gün sonra günlerden " + gunler[today]);
         }
         else if (islem==1){
-            System.out.println("Şu anda saat kaç?");
-            System.out.print("Saati giriniz : ");
+            System.out.println("What time is it now?");
+            System.out.print("Enter the hour : ");
             int saat=input.nextInt();
-            System.out.print("Dakikayı giriniz : ");
+            System.out.print("Enter the minute : ");
             int dakika=input.nextInt();
 
             System.out.print("Kaç dakika sonrayı hesaplamak istersiniz? ");
