@@ -15,8 +15,8 @@ public class ConvertBinary { //convert decimal system to binary format
             binary = new StringBuilder("0");
         }
         while (number>0) {
-            int mod = number%2;
-                binary.insert(0, mod);
+            int mode = number%2;
+                binary.insert(0, mode);
                 number=number/2;
         }
         System.out.println("binary digit : "+binary);
